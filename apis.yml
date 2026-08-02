@@ -1,7 +1,24 @@
 aid: trocafone
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/trocafone.png
 name: Trocafone
-description: Trocafone is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Trocafone is a Brazilian e-commerce company specializing in refurbished and pre-owned
+  smartphones and consumer electronics sold with warranty. Operating primarily in Brazil on the VTEX
+  commerce platform, it runs a consumer marketplace for certified semi-new iPhones, Samsung, Motorola
+  and other devices, a trade-in program ("Venda seu aparelho") that buys used devices from consumers,
+  and a Reparofone device-repair service. Backed by 500 Global, the company is tracked in the API
+  Evangelist network as a company profile; as of this enrichment pass it publishes no public developer
+  or API surface.
 url: https://raw.githubusercontent.com/api-evangelist/trocafone/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +28,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- E-Commerce
+- Refurbished Electronics
+- Marketplace
+- Mobile Devices
+- Trade-In
+- Consumer Electronics
+- Brazil
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +45,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/trocafone-domain-security.yml
 - type: Website
   url: https://trocafone.com.br
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
